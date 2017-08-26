@@ -6,7 +6,6 @@ FirstName nvarchar(50),
 LastName nvarchar(50),
 emailid nvarchar(250),
 [Password] nvarchar(200),
-Interests nvarchar(200),
 location geography,
 latitude decimal(9,6),
 longitude decimal(9,6),
@@ -21,4 +20,7 @@ InterestId int primary key identity,
 InterestName nvarchar(100)
 )
 
-
+create table UserInterests(
+UserId int,
+InterestId int
+)
